@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item{
+    width: 200px;
+    height: 100px;
+    background: yellow; 
+}
+.item:first-child{
+    background: green;
+}
+.item:nth-child(5){
+    background: red;
+}
+.item:last-child{
+    background: dodgerblue;
+}

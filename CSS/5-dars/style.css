@@ -1,0 +1,36 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background: red;
+  overflow: auto;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transform: translateY(150px);
+}
+.box:hover .item > img {
+  transform: scale(1.2);
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+  transition: 1s;
+}
+
+.container :nth-child(2n) {
+  background: red;
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.header{
+    .header__nav-list-item-link{
+        color: aqua;
+    }:hover{
+        background: red;
+    }:active{
+        color: black;
+    }
+}
+div{
+    /* inheritance */
+    color: red;
+    font-size: 1rem;
+    text-decoration: dotted;
+    list-style: circle;
+    
+    /* not inheritance */
+}

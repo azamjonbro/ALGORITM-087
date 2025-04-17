@@ -1,0 +1,12 @@
+$color-primary:blue;
+
+input{
+    border:1px solid $primary-color;
+    border-radius: 8px;
+    color: var(--input-border-color);   
+}
+input:hover{
+    border:1px solid blue;
+    color: blue;
+
+}

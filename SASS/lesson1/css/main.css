@@ -1,0 +1,19 @@
+:root {
+  --input-border-color:#919191;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(30px);
+  }
+}
+input {
+  border: 1px solid;
+  border-radius: 8px;
+  color: var(--input-border-color);
+}
+
+input:hover {
+  border: 1px solid blue;
+  color: blue;
+}

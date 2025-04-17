@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url(./bgImg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.signup {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.signup > a {
+  color: #c0ebfc63;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+.signup:hover  a{
+    background: #ccc;
+    color: black;
+}
+.login {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* background: #fff; */
+}
+.login_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login_text > p,
+h2 {
+  color: #fff;
+}
+.login_text > h2 {
+  font-size: 38px;
+}
+.login_text > p {
+  color: #c0ebfc63;
+}
+.formbox,
+.formbox > label {
+  display: flex;
+  flex-direction: column;
+}
+.formbox {
+  gap: 24px;
+}
+.formbox > label {
+  gap: 10px;
+  color: #c0ebfc63;
+  font-size: 18px;
+}
+.formbox > label > input {
+  padding: 12px 10px;
+  background: #bababa32;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.login__btn {
+  padding: 12px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background: rgb(25, 25, 94);
+  background: linear-gradient(
+    10deg,
+    rgba(25, 25, 94, 1) 26%,
+    rgba(131, 10, 111, 1) 96%
+  );
+  transition: 500ms;
+
+}
+.login__btn:hover {
+  background: rgb(131, 10, 111);
+  transition: 500ms;
+    background: linear-gradient(
+        10deg,
+        rgba(131, 10, 111, 1) 35%,
+        rgba(25, 25, 94, 1) 93%
+        );
+}
+.buttonbox{
+  display: flex;
+  gap: 20px;
+}
+.buttonbox>a{
+  width: 200px;
+  height: 48px;
+  background: #cccccc47;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  transition: 500ms;
+}
+.buttonbox>a>i{
+  color: dodgerblue;
+}
+.buttonbox>a:hover{
+  background: white;
+  transition: 500ms;
+
+}
+.buttonbox>a:hover, i,a{
+  color: dodgerblue;
+  transition: 500ms;
+}

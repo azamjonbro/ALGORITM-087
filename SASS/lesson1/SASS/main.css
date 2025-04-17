@@ -1,0 +1,1 @@
+:root{--input-border-color:#919191}@keyframes pulse{0%{transform:translate(30px)}}input{border:var(--input-border-color);border-radius:8px;color:var(--input-border-color)}input :hover{border:blue;color:blue}

@@ -1,0 +1,32 @@
+.box{
+    width: 100px;
+    height: 100px;
+    animation: shef 10s infinite ;
+    background: dodgerblue;
+}
+
+@keyframes  shef{
+    0%{
+        background: #000;
+        transform: translateX(0px)   translateY(0px) rotate(20deg);
+
+    }
+    25%{
+        background: blue;
+        transform: translateX(100px) translateY(0px);
+
+    }
+    50%{
+        background: red;
+        transform: translateY(100px) translateX(100px);
+    }
+    75%{
+        background: yellowgreen;
+        transform: translateX(100px) translateY(0px);
+
+    }
+    100%{
+        background: gray;
+        transform: translateY(0px);
+    }
+}

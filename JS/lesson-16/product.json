@@ -1,0 +1,26 @@
+[
+ {
+    "title":"Iphone 16 pro max",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe rem iste ullam laboriosam et quas quod similique ut",
+    "img":"https://picsum.photos/id/20/290/290",
+    "price":1299,
+    "category":"electronics",
+    "rating":4.9,
+    "stock": 10,
+    "brand":"Apple",
+    "discountPercentage": 999,
+    "id": 1
+},
+{
+    "title":"Samsung Galaxy S25 Ultra",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe rem iste ullam laboriosam et quas quod similique ut",
+    "img":"https://picsum.photos/id/21/290/290",
+    "price":1199,
+    "category":"electronics",
+    "rating":4.8,
+    "stock": 15,
+    "brand":"Samsung",
+    "discountPercentage": 999,
+    "id": 2
+}   
+]

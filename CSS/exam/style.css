@@ -1,0 +1,37 @@
+.list{
+  display: flex;
+  gap: 20px;
+}
+.list-item{
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: gray;
+}
+.list-item:nth-child(1){
+  background: yellow;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.list-item:nth-child(2){
+  background: yellow;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+}
+.list-item:nth-child(3){
+  background: yellow;
+  flex-grow: 3;
+  flex-shrink: 1;
+
+}
+.list-item:nth-child(4){
+  background: yellow;
+  flex-grow: 2;
+  flex-shrink: 2;
+
+}

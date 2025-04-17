@@ -1,0 +1,32 @@
+.box{
+    color: aqua;
+    text-align: center;
+}
+#fridge{
+    text-align: center;
+}
+.box2{
+    color: gold;
+}
+.item{
+    color: maroon;
+}
+.top{
+    color: blue;
+}
+.top_gender{
+    color: violet;
+}
+#bed{
+    text-align: center;
+}
+textarea{
+    color: red;
+    border-radius: 10px;
+    margin-left: 45%;
+}
+button{
+    color: blue;
+    background-color: yellow;
+    margin-left: 20px;
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --text-color-main:#65666b;
+    --text-color-sometimes:#535765;
+    --button-bg-color:#14171F;
+    --box-bg-sometimes:#05050569;
+    --font-size-main:20px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    cursor: url('./mouse.svg'),auto;
+}  
+
+.justify-text {
+    text-align: justify;
+    width: 60%;
+}     
