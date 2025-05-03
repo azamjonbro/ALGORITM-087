@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.logobox>a> h2{
+    font-size: 2.5em;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.buttonbox{
+    position: relative;
+}
+.count{
+    padding: 3px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    position: absolute;
+    top: -25px;
+    right: -15px;
+}
+
+
+
+/* products */
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product{
+    width: 32%;
+    max-width: calc(25% - 30px);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.prouct-title{
+    font-size: 1.5rem;
+}
+.product-desc{
+    font-size: 1rem;
+    color: #666;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+form > input, textarea{
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+form>button{
+    outline: none;
+    border: none;
+    background: #ccc;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form>button:hover{
+    box-shadow: 2px 4px 10px #ccc;
+}
