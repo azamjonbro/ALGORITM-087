@@ -8,5 +8,55 @@
     "sale": false,
     "salePrice": null,
     "image": "https://picsum.photos/id/310/300/300"
+  },
+  {
+    "id": 1746524567663,
+    "title": "No longer human",
+    "description": "psihologiya, author: osuma dazai",
+    "quantity": 100,
+    "price": 59000,
+    "sale": false,
+    "salePrice": null,
+    "image": "https://picsum.photos/id/45/300/300"
+  },
+  {
+    "id": 1746524650664,
+    "title": "Murdalar gapirmaydilar",
+    "description": "bu kitob tohir malikka tegishli bolib dramatik asar. Bu asarda Komil ismli insonni o'limi va sababi haqida keltirilgan",
+    "quantity": 240,
+    "price": 79000,
+    "sale": false,
+    "salePrice": null,
+    "image": "https://picsum.photos/id/34/300/300"
+  },
+  {
+    "id": 1746531455540,
+    "title": "Atom odatlar",
+    "description": "djems klir. bu kitob kichik odatlarni o'zgartirib katta natijalarga erishish uchun yo'l ko'rsatadigan kitob masalan erta turish bo'sh vaqtda scroll bilan shug'ullanmaslikni tushuntirgan",
+    "quantity": 240,
+    "price": 79000,
+    "sale": false,
+    "salePrice": null,
+    "image": "https://picsum.photos/id/31/300/300"
+  },
+  {
+    "id": 1746531552782,
+    "title": "Muqaddima",
+    "description": "ibn haldun ning kitobi bu yerda diniy bilimlar va odob ahloq qoidalari haqida juda ko'p misollar va Amir temur haqida ham bir nechta misralar bor",
+    "quantity": 100,
+    "price": 89000,
+    "sale": false,
+    "salePrice": null,
+    "image": "https://picsum.photos/id/29/300/300"
+  },
+  {
+    "id": 1746531554256,
+    "title": "Muqaddima",
+    "description": "ibn haldun ning kitobi bu yerda diniy bilimlar va odob ahloq qoidalari haqida juda ko'p misollar va Amir temur haqida ham bir nechta misralar bor",
+    "quantity": 100,
+    "price": 89000,
+    "sale": false,
+    "salePrice": null,
+    "image": "https://picsum.photos/id/29/300/300"
   }
 ]
