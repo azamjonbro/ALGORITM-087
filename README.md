@@ -1,3 +1,1 @@
-# Backery
-# Backery
-# Backery
+##bu repostory algoritm o'quvchilari va mening 087-chi guruhim uchun ochilgan repo hisoblanib umumiy 9 oy davomida o'qilishi kerak bolgan barcha tehnologiyalar va methodlar shu folder ichida bo'ladi
