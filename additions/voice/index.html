@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutqni Matnga Aylantirish</title>
+</head>
+<body>
+  <h2>Mikrofonda gapiring, matn oynaga qo‘shilib boradi:</h2>
+  <div id="output" style="border: 1px solid #ccc; padding: 10px; width: 500px; min-height: 100px;"></div>
+
+  <script>
+    const outputDiv = document.getElementById('output');
+    let finalTranscript = '';
+
+    // API tanlash
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    recognition.continuous = true; // Doimiy tinglash
+    recognition.interimResults = true; // Vaqtinchalik natijalarni ham olish
+    recognition.lang = 'uz-UZ'; // O‘zbek tili (yoki 'ru-RU', 'en-US' kabilar) //telefonda oqimeydi
+
+    recognition.onresult = (event) => {
+      let interimTranscript = '';
+
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcript = event.results[i][0].transcript;
+
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript + ' ';
+        } else {
+          interimTranscript += transcript;
+        }
+      }
+
+      outputDiv.innerHTML = finalTranscript + '<i style="color:gray;">' + interimTranscript + '</i>';
+    };
+
+    recognition.onerror = (event) => {
+      console.error('Xatolik:', event.error);
+    };
+
+    recognition.onend = () => {
+      // Avto qayta boshlash
+      recognition.start();
+    };
+
+    // Ishga tushirish
+    recognition.start();
+  </script>
+</body>
+</html>

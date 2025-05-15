@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Video + Audio Recorder</title>
+  <style>
+    video {
+      width: 600px;
+      border: 2px solid #444;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Video + Ovoz Yozuvi</h2>
+
+  <video id="preview" autoplay muted></video><br>
+
+  <button id="startBtn">Record</button>
+  <button id="stopBtn" disabled>Stop</button>
+  <a id="downloadLink" style="display:none;" download="recorded-video.webm">Videoni yuklab olish</a>
+
+  <script>
+    const videoPreview = document.getElementById('preview');
+    const startBtn = document.getElementById('startBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const downloadLink = document.getElementById('downloadLink');
+
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    let stream;
+
+    // 1. Kamerani ishga tushirish
+    async function initCamera() {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        videoPreview.srcObject = stream;
+      } catch (err) {
+        console.error('Kamera yoki mikrofonga ulanishda xatolik:', err);
+        alert('Kamera yoki mikrofonga ruxsat berilmadi.');
+      }
+    }
+
+    // 2. Record tugmasi
+    startBtn.onclick = () => {
+      recordedChunks = [];
+      mediaRecorder = new MediaRecorder(stream);
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data.size > 0) {
+          recordedChunks.push(e.data);
+        }
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(recordedChunks, { type: 'video/webm' });
+        const url = URL.createObjectURL(blob);
+        downloadLink.href = url;
+        downloadLink.style.display = 'inline';
+        downloadLink.textContent = 'Yozuvni yuklab olish';
+      };
+
+      mediaRecorder.start();
+      startBtn.disabled = true;
+      stopBtn.disabled = false;
+      downloadLink.style.display = 'none';
+    };
+
+    // 3. Stop tugmasi
+    stopBtn.onclick = () => {
+      mediaRecorder.stop();
+      startBtn.disabled = false;
+      stopBtn.disabled = true;
+    };
+
+    initCamera();
+  </script>
+
+</body>
+</html>

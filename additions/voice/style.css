@@ -1,0 +1,9 @@
+.slider-imgbox{
+ position: relative;
+}
+.slider-imgbox>img{
+ position: absolute;
+}
+body{
+ height: 2000000px;
+}
