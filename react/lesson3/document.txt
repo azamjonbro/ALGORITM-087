@@ -1,0 +1,26 @@
+.gitignore bu githubga codelar qo'shilish vaqtida ayrib qolinadigan code structure
+
+eslint.config.js bu bizni reactda yoki qaysidir freamworda yozayotgan codelarimiz va scriptlarimizni tepadan kuzatib turadi va hatoliklarni o'z o'rnida bizga ko'rsatib beradi.
+
+
+.html filesi ichida root nomi id bilan berilgan div elon qilingan
+
+uni ichiga app.jsx yoki main.jsx ichida yig'ilgan html codelar va js scriptlar render bo'lib oynaga ko'rsatiladi
+
+
+
+
+
+--------------------Package.json-----------------
+
+
+1: Name : bu bizni fileimiz va loyihamiz nomi hisoblanadi.
+2: private: Bu havfsizlik
+3: Versiya : bu bizni yaratgan interface imizni muqobil ishlaydigan holatga olib chiqish uchun o'zgarishlar ketma ketligini yozib boradigan sanoq tizimi.
+4: js typesi : bizda ikkita type bor edi hozir biz reactda aynan module typesidan foydalanamiz.
+
+5: script bizning codelarimizni ishga tushurish uchun buyruqlar to'plami.
+
+6: dependensies :
+Bu bizni kutubhonalarimiz turadigan shkaf yoki javon hisoblanadi
+137.1.0
