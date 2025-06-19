@@ -1,0 +1,27 @@
+[
+ {
+  "Header_Navbar-home":{
+   "uz":"Uy",
+   "ru":"Dom",
+   "en":"Home"
+  },
+  "Salom_bolalar": {
+   "uz": "Salom bolalar",
+   "ru": "Привет дети",
+   "en": "Hello kids"
+  },
+  "Zerikib_kettim": {
+   "uz": "Zerikib kettim",
+   "ru": "Мне стало скучно",
+   "en": "I'm bored"
+  },
+  "Nima_gap": {
+   "uz": "Nima gap",
+   "ru": "Что нового",
+   "en": "What's up"
+  }
+ }
+]
+
+
+
